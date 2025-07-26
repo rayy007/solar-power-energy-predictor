@@ -71,7 +71,8 @@ def user_input_features():
     }])
 
 input_df = user_input_features()
-
+st.subheader("User Input Parameters")
+st.write(input_df)
 # -------------------------
 # Predict and display results
 # -------------------------
