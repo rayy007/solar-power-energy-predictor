@@ -27,7 +27,7 @@ def set_background(image_file):
         unsafe_allow_html=True
     )
 
-set_background("solarpanel.jpg")
+set_background("solarpic2.png")
 
 # -------------------------
 # App title and description
