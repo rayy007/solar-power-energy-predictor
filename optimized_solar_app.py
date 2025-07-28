@@ -81,6 +81,6 @@ if st.button("🔍 Predict"):
 
     # Styled output
     st.markdown(
-        f"<h3 style='color: red; font-weight: bold;'>🔶 Predicted Output: {prediction:.2f} joules</h3>",
+        f"<h3 style='color: yellow; font-weight: bold;'>🔶 Predicted Output: {prediction:.2f} joules</h3>",
         unsafe_allow_html=True
     )
