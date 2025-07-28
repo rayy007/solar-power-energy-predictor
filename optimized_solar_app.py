@@ -33,7 +33,7 @@ set_background("solarpic2.png")
 # App title and description
 # -------------------------
 st.title("S☀️lar Power Generation Predictor")
-st.write("Enter environmental conditions to predict solar power output using a trained XGBoost model.")
+st.write("Enter environmental conditions to predict solar power output.")
 
 # -------------------------
 # Load model and data
