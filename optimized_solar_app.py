@@ -39,7 +39,7 @@ st.write("Enter environmental conditions to predict solar power output.")
 # Load model and data
 # -------------------------
 model = joblib.load("cb_model.pkl")
-data = pd.read_csv("solarpowergeneration_cleaned.csv")  # This should be your preprocessed CSV
+data = pd.read_csv("SolarPG_cleaned.csv")  # This should be your preprocessed CSV
 avg_power = data["power-generated"].mean()
 
 # -------------------------
