@@ -48,15 +48,15 @@ avg_power = data["power-generated"].mean()
 st.sidebar.header("Input Features")
 
 def user_input_features():
-    distance_solar_noon = st.sidebar.number_input("Distance to Solar Noon (radians)", 0.0, 1.0, 0.397, 0.001)
+    distance_solar_noon = st.sidebar.number_input("Distance to Solar Noon (radians)", 0.0, 1.0, 0.296, 0.001)
     temperature = st.sidebar.slider("Temperature (°C)", 0.0, 80.0, 69.0)
     wind_direction = st.sidebar.slider("Wind Direction (°)", 0, 360, 28)
     wind_speed = st.sidebar.slider("Wind Speed (m/s)", 0.0, 25.0, 7.5)
     sky_cover = int(st.sidebar.selectbox("Sky Cover", ('0','1','2','3','4')))
     visibility = st.sidebar.slider("Visibility (km)", 0.0, 10.0, 10.0)
-    humidity = st.sidebar.slider("Humidity (%)", 0.0, 100.0, 70.0)
-    avg_wind_speed = st.sidebar.slider("Avg Wind Speed (m/s)", 0.0, 30.0, 0.0)
-    pressure = st.sidebar.slider("Pressure (inHg)", 29.4, 30.6, 29.89, 0.01)
+    humidity = st.sidebar.slider("Humidity (%)", 0.0, 100.0, 20.0)
+    avg_wind_speed = st.sidebar.slider("Avg Wind Speed (m/s)", 0.0, 30.0, 23.0)
+    pressure = st.sidebar.slider("Pressure (inHg)", 29.4, 30.6, 29.85, 0.01)
 
     return pd.DataFrame([{
         "distance-to-solar-noon": distance_solar_noon,
